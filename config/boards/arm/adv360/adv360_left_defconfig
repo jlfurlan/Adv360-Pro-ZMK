@@ -69,6 +69,10 @@ CONFIG_BUILD_OUTPUT_UF2=y
 CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y
 CONFIG_ZMK_BLE_PASSKEY_ENTRY=n
 
+# Wired mode: while USB is attached, don't advertise to BLE hosts and keep the
+# Bluetooth status LED dark (patch in jlfurlan/zmk branch adv360-usb-quiet).
+CONFIG_ZMK_BLE_QUIET_ON_USB=y
+
 CONFIG_ZMK_BLE=y
 CONFIG_ZMK_USB=y
 CONFIG_ZMK_HID_INDICATORS=y
